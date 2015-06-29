@@ -14,7 +14,8 @@ author:
   -
     ins: R. Stradling
     name: Rob Stradling
-    org: Comodo Inc
+    org: Comodo CA, Ltd.
+    email: rob.stradling@comodo.com
 
 normative:
   RFC2119:
