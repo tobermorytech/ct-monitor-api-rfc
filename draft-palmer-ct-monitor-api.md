@@ -22,7 +22,7 @@ normative:
 
 informative:
   RFC6962:
-  I-D.ietf-trans-rfc6962-bis: 6962bis
+  I-D.ietf-trans-rfc6962-bis:
   REST:
     target: http://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf
     title: Architectural Styles and the Design of Network-based Software Architectures
@@ -77,8 +77,8 @@ document are to be interpreted as described in RFC 2119 {{RFC2119}}.
 Certificate Transparency
 : A scheme for providing for post-hoc examination of the issuance of X.509
   certificates in the Internet PKI, as defined by {{RFC6962}} and
-  {{6962bis}}.  It may be extended in the future to provide transparency to
-  other trust-related Internet technologies, such as DNSSEC.
+  {{I-D.ietf-trans-rfc6962-bis}}.  It may be extended in the future to provide
+  transparency to other trust-related Internet technologies, such as DNSSEC.
 
 Client
 : Any person or program which is authorised to make use of the services
