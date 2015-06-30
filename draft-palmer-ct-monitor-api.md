@@ -209,6 +209,11 @@ list of all legitimately issued certificates, and may wish to exclude
 certificates from being returned, based on criteria such as issuer/serial
 tuples.
 
+As time passes, the CT logs will contain an ever increasing number of expired
+certificates.  A site operator will almost certainly want to have the option of
+excluding expired certificates from being returned, since misissued expired
+certificates are less of a problem than misissued unexpired certificates.
+
 
 ### Be Alerted to New Issuance For a Domain
 
