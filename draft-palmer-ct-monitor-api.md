@@ -222,6 +222,26 @@ issuance of a new certificate which would be considered valid for a domain
 or subtree of the DNS namespace.
 
 
+### Manage Alert Registrations
+
+A site operator may wish to modify the mechanism (e.g. SMS, email, RSS feed,
+etc) by which they receive alert notifications, or to cancel alerts for a domain
+or subtree that they are no longer interested in.
+
+A site operator may want to register alerts for a large number of domains or
+subtrees.  To keep track of these alert registrations, the site operator may
+want to ask the monitor to return the complete list of alerts that they've
+registered.
+
+A site operator may also want alert notifications for multiple alert
+registrations to be bundled together into at most one notification message per
+configurable time period.
+
+All operations to manage alert registrations should be authenticated, to avoid
+the possibility of alert spamming (e.g. person A configures the monitor to send
+unwanted alert notification emails to person B).
+
+
 ### Finding Certificates for an Organisation
 
 This is similar to a per-domain search, however it acts on the other data
