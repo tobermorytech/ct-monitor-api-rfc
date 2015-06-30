@@ -140,10 +140,22 @@ clients to discover which features a particular monitor supports, there must
 be some way of publishing that list.
 
 
-### Rate-limiting Requests
+### Preventing Abuse
 
-To prevent abuse, a monitor will almost certainly want to be able to limit
-the number of requests that a single client can make in a given time period.
+
+#### Rate-limiting Requests
+
+A monitor will almost certainly want to be able to limit the number of requests
+that a single client can make in a given time period.
+
+
+#### Terminating Long-running Requests
+
+Some requests may be difficult or even impossible for a monitor to handle, due
+to the volume of data that must be processed.  Since it may not be possible for
+a monitor to detect these requests before attempting to process them, a monitor
+will almost certainly want to be able to watch for and terminate long-running
+requests.
 
 
 ## Log Stalker
