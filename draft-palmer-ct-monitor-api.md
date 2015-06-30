@@ -280,6 +280,19 @@ useful to be able to add a "depth" parameter to the search, to allow all
 levels of a certificate "tree" to be retrieved simultaneously.
 
 
+### Finding Certificates That Violate Policy Requirements
+
+Trust Store Operators are interested in how well each CA conforms to industry
+guidelines (such as those defined by the CABForum) and browser-specific CA
+inclusion policies.
+
+Monitors could analyze every certificate they obtain from the log(s) and perform
+whatever checks can be done programatically to assess compliance with these
+guidelines and policies, then report violations when requested to do so.
+(Without this service, each Trust Store Operator would need to analyze every
+certificate themselves).
+
+
 # RESTful Principles
 
 The concepts of a "REST" architecture originally come from Roy Fielding's
